@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Ahmad Fauzi</title>
+    <meta name="description" content="Portfolio Ahmad Fauzi - Showcase karya jahitan, analisis trading. Coming soon dengan project-project menarik." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fahmadfauz9126back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <nav class="fixed top-0 left-0 right-0 bg-background/95 backdrop-blur-sm border-b border-border z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <a href="homepage.html" class="text-xl font-bold text-gradient">Ahmad Fauzi</a>
+                </div>
+            <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-smooth px-3 py-2 rounded-md text-sm">Beranda</a>
+                    <a href="skills.html" class="text-text-secondary hover:text-primary transition-smooth px-3 py-2 rounded-md text-sm">Keahlian</a>
+                    <a href="portfolio.html" class="text-primary font-medium px-3 py-2 rounded-md text-sm">Portfolio</a>
+                    <a href="contact.html" class="btn-accent text-sm">Hubungi</a>
+                </div>
+            </div>
+            
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-text-secondary hover:text-primary p-2">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <div id="mobile-menu" class="md:hidden hidden bg-background border-t border-border">
+        <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+            <a href="homepage.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Beranda</a>
+            <a href="skills.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Keahlian</a>
+            <a href="portfolio.html" class="text-primary block px-3 py-2 rounded-md text-base font-medium">Portfolio</a>
+            <a href="contact.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Hubungi</a>
+        </div>
+    </div>
+</nav>
+
+<section class="pt-20 pb-16 bg-gradient-to-br from-primary-50 to-accent-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center" data-aos="fade-up">
+            <h1 class="text-4xl lg:text-5xl font-bold text-text-primary mb-6">
+                Portfolio <span class="text-gradient">Saya</span>
+            </h1>
+            <p class="text-lg text-text-secondary max-w-3xl mx-auto mb-8">
+                Showcase karya dari berbagai bidang pembelajaran saya. Dari karyawan hingga analisis market, dari konten kreatif hingga project kolaborasi. Portfolio ini terus berkembang seiring perjalanan pembelajaran saya.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#karya-jahitan" class="btn-primary">Lihat Karya Jahitan</a>
+                <a href="#analisis-trading" class="btn-secondary">Analisis Market</a>
+                <a href="#belajar-coding" class="btn-secondary">Belajar Coding</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-16 bg-background">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-wrap justify-center gap-4 mb-12" data-aos="fade-up">
+            <button class="portfolio-filter active" data-category="all">Semua</button>
+            <button class="portfolio-filter" data-category="tailoring">Jahitan</button>
+            <button class="portfolio-filter" data-category="trading">Market</button>
+            <button class="portfolio-filter" data-category="coding">Coding</button>
+        </div>
+
+        <div id="karya-jahitan" class="mb-20">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-text-primary mb-4">Karya Jahitan</h2>
+                <p class="text-text-secondary max-w-2xl mx-auto">Koleksi karya jahitan custom dan alterasi dengan detail presisi. Setiap piece dibuat dengan perhatian khusus pada kualitas dan kepuasan klien.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 justify-center">
+    <!-- Card 1: Karyawan Jahit Garment -->
+    <div class="card overflow-hidden group portfolio-item" data-category="tailoring" data-aos="fade-up" data-aos-delay="100">
+        <div class="relative">
+            <img src="../public/image/jahit.jpg" 
+                 alt="Karyawan garment" 
+                 class="w-full h-48 object-cover group-hover:scale-105 transition-smooth" loading="lazy" />
+        </div>
+        <div class="p-6">
+            <h3 class="text-xl font-semibold text-text-primary mb-2">Karyawan Jahit Garment (Kontrak)</h3>
+            <p class="text-text-secondary text-sm mb-4">
+                Pengalaman bekerja di pabrik konveksi dengan sistem kontrak. Terbiasa mengikuti target produksi 
+                dan standar kualitas perusahaan.
+            </p>
+            <div class="flex items-center justify-between">
+                <div class="flex items-center text-sm text-text-muted">
+                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                    </svg>
+                    2025
+                </div>
+                <span class="text-xs bg-surface px-2 py-1 rounded-full text-text-muted">Garment</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card 2: Dasar Menjahit -->
+    <div class="card overflow-hidden group portfolio-item" data-category="tailoring" data-aos="fade-up" data-aos-delay="200">
+        <div class="relative">
+            <img src="../public/image/dasar_jahit.jpg" 
+                 alt="Dasar menjahit" 
+                 class="w-full h-48 object-cover group-hover:scale-105 transition-smooth" loading="lazy" />
+            </div>
+        <div class="p-6">
+            <h3 class="text-xl font-semibold text-text-primary mb-2">Dasar Menjahit</h3>
+            <p class="text-text-secondary text-sm mb-4">
+                Mampu melakukan jahitan sederhana seperti obras, pasang kancing, dan perbaikan kecil. 
+                Masih di tahap pemula namun terus belajar menambah pengalaman.
+            </p>
+            <div class="flex items-center justify-between">
+                <div class="flex items-center text-sm text-text-muted">
+                    <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                    </svg>
+                    2025
+                </div>
+                <span class="text-xs bg-surface px-2 py-1 rounded-full text-text-muted">Basic Skill</span>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+        <div id="analisis-trading" class="mb-20">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-text-primary mb-4">Analisis Trading</h2>
+                <p class="text-text-secondary max-w-2xl mx-auto">Insight dan analisis pasar dari perspektif trader pemula. Sharing pengalaman belajar dan strategi yang sedang dikembangkan.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card overflow-hidden group portfolio-item" data-category="trading" data-aos="fade-up" data-aos-delay="100">
+                    <div class="relative">
+                        <img src="../public/image/trading.jpg" alt="Market analysis placeholder" class="w-full h-48 object-cover group-hover:scale-105 transition-smooth" loading="lazy"/>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-text-primary mb-2">Analisis Teknikal Harian</h3>
+                        <p class="text-text-secondary text-sm mb-4">Analisis chart dan pattern recognition untuk major currency pairs. Sharing insight dari perspektif trader yang masih belajar.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center text-sm text-text-muted">
+                                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                                </svg>
+                                2023
+                            </div>
+                            <span class="text-xs bg-surface px-2 py-1 rounded-full text-text-muted">Forex</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card overflow-hidden group portfolio-item" data-category="trading" data-aos="fade-up" data-aos-delay="200">
+                    <div class="relative">
+                        <img src="https://images.pexels.com/photos/6801648/pexels-photo-6801648.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Trading education placeholder" class="w-full h-48 object-cover group-hover:scale-105 transition-smooth" loading="lazy"/>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-text-primary mb-2">Trading Basics untuk Pemula</h3>
+                        <p class="text-text-secondary text-sm mb-4">Panduan dasar trading dari sudut pandang sesama pemula. Tips manajemen risiko dan psikologi trading yang mudah dipahami.</p>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center text-sm text-text-muted">
+                                <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                                </svg>
+                                2023
+                            </div>
+                            <span class="text-xs bg-surface px-2 py-1 rounded-full text-text-muted">Analis Market</span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+                <div id="belajar-coding" class="mb-20">
+    <div class="text-center mb-12" data-aos="fade-up">
+        <h2 class="text-3xl font-bold text-text-primary mb-4">Belajar Coding</h2>
+        <p class="text-text-secondary max-w-2xl mx-auto">
+            Dokumentasi perjalanan belajar coding tingkat pemula. Menggunakan bantuan AI untuk eksplorasi 
+            pembuatan project sederhana dan praktek langsung.
+        </p>
+    </div>
+    
+    <div class="grid md:grid-cols-2 gap-8 justify-center">
+        <!-- Card 1: Portfolio dengan AI -->
+        <div class="card overflow-hidden group portfolio-item" data-category="coding" data-aos="fade-up" data-aos-delay="100">
+            <div class="relative">
+                <img src="../public/image/coding.jpg" 
+                     alt="Portfolio AI" 
+                     class="w-full h-48 object-cover group-hover:scale-105 transition-smooth" loading="lazy" />
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-semibold text-text-primary mb-2">Portfolio Coding dengan Bantuan AI</h3>
+                <p class="text-text-secondary text-sm mb-4">
+                    Membuat website portfolio pribadi menggunakan AI sebagai asisten coding. 
+                    Fokus pada struktur HTML, styling CSS, dan integrasi komponen sederhana.
+                </p>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center text-sm text-text-muted">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                        </svg>
+                        2025
+                    </div>
+                    <span class="text-xs bg-surface px-2 py-1 rounded-full text-text-muted">Coding</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2: Tools Kirim Email -->
+        <div class="card overflow-hidden group portfolio-item" data-category="coding" data-aos="fade-up" data-aos-delay="200">
+            <div class="relative">
+                <img src="../public/image/send_mail.jpg" 
+                     alt="Email Tools JS" 
+                     class="w-full h-48 object-cover group-hover:scale-105 transition-smooth" loading="lazy" />
+            </div>
+            <div class="p-6">
+                <h3 class="text-xl font-semibold text-text-primary mb-2">Tools Kirim Email untuk Lamaran Kerja</h3>
+                <p class="text-text-secondary text-sm mb-4">
+                    Membuat script sederhana dengan JavaScript untuk mengirim email lamaran kerja. 
+                    Proses dijalankan melalui terminal (Termux) untuk simulasi penggunaan real.
+                </p>
+                <div class="flex items-center justify-between">
+                    <div class="flex items-center text-sm text-text-muted">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                        </svg>
+                        2025
+                    </div>
+                    <span class="text-xs bg-surface px-2 py-1 rounded-full text-text-muted">Coding</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<section class="py-16 bg-surface">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12" data-aos="fade-up">
+            <h2 class="text-3xl font-bold text-text-primary mb-4">Timeline Portfolio</h2>
+            <p class="text-text-secondary max-w-2xl mx-auto">Rencana pengembangan portfolio dengan target realistis. Setiap milestone akan diupdate secara transparan.</p>
+        </div>
+        
+        <div class="relative">
+    <div class="absolute left-1/2 transform -translate-x-1/2 w-1 bg-border h-full hidden lg:block"></div>
+    
+    <div class="space-y-12">
+        <!-- Trading -->
+        <div class="flex flex-col lg:flex-row items-center" data-aos="fade-up" data-aos-delay="100">
+            <div class="lg:w-1/2 lg:pr-8 mb-4 lg:mb-0">
+                <div class="card p-6 lg:ml-auto lg:max-w-md">
+                    <div class="flex items-center mb-3">
+                        <div class="w-3 h-3 bg-primary rounded-full mr-3"></div>
+                        <span class="text-sm font-medium text-primary">Desember 2023</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-text-primary mb-2">Mulai Belajar Analis Market</h3>
+                    <p class="text-text-secondary text-sm">
+                        Analisis teknikal sederhana dan mencoba strategi dasar trading forex/crypto dari sudut pandang pemula.
+                    </p>
+                </div>
+            </div>
+            <div class="hidden lg:block w-4 h-4 bg-primary rounded-full border-4 border-background relative z-10"></div>
+            <div class="lg:w-1/2 lg:pl-8"></div>
+        </div>
+        
+        <!-- Coding -->
+        <div class="flex flex-col lg:flex-row items-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="lg:w-1/2 lg:pr-8"></div>
+            <div class="hidden lg:block w-4 h-4 bg-accent rounded-full border-4 border-background relative z-10"></div>
+            <div class="lg:w-1/2 lg:pl-8 mb-4 lg:mb-0">
+                <div class="card p-6 lg:mr-auto lg:max-w-md">
+                    <div class="flex items-center mb-3">
+                        <div class="w-3 h-3 bg-accent rounded-full mr-3"></div>
+                        <span class="text-sm font-medium text-accent">September 2024</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-text-primary mb-2">Belajar Coding</h3>
+                    <p class="text-text-secondary text-sm">
+                        Membuat project kecil seperti portfolio website dengan bantuan AI, dan mencoba script sederhana di Termux.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Menjahit -->
+        <div class="flex flex-col lg:flex-row items-center" data-aos="fade-up" data-aos-delay="300">
+            <div class="lg:w-1/2 lg:pr-8 mb-4 lg:mb-0">
+                <div class="card p-6 lg:ml-auto lg:max-w-md">
+                    <div class="flex items-center mb-3">
+                        <div class="w-3 h-3 bg-success rounded-full mr-3"></div>
+                        <span class="text-sm font-medium text-success">Agustus 2025</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-text-primary mb-2">Pengalaman Menjahit</h3>
+                    <p class="text-text-secondary text-sm">
+                        Bekerja sebagai karyawan jahit garment dengan sistem kontrak, serta mengasah kemampuan dasar menjahit sederhana.
+                    </p>
+                </div>
+            </div>
+            <div class="hidden lg:block w-4 h-4 bg-success rounded-full border-4 border-background relative z-10"></div>
+            <div class="lg:w-1/2 lg:pl-8"></div>
+        </div>
+    </div>
+</div>
+</section>
+
+<footer class="bg-text-primary text-white py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-8">
+            <div class="md:col-span-2">
+                <h3 class="text-2xl font-bold mb-4">Ahmad Fauzi</h3>
+                <p class="text-gray-300 mb-4 max-w-md">
+                    Multi-skilled professional yang menggabungkan keahlian tradisional dengan skill digital modern. Selalu belajar, selalu berkembang.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="https://tiktok.com/@vuzinet" target="_blank" class="text-gray-300 hover:text-white transition-smooth">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-.88-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com/vuzinett" target="_blank" class="text-gray-300 hover:text-white transition-smooth">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="https://facebook.com/vuzinett" target="_blank" class="text-gray-300 hover:text-white transition-smooth">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/vuzinet" target="_blank" class="text-gray-300 hover:text-white transition-smooth">
+    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.387.6.113.82-.26.82-.577 
+        0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 
+        1.205.085 1.838 1.236 1.838 1.236 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.605-2.665-.3-5.466-1.334-5.466-5.932 
+        0-1.31.468-2.382 1.235-3.222-.123-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 013.003-.404c1.02.005 2.045.137 3.003.404 
+        2.29-1.552 3.296-1.23 3.296-1.23.653 1.653.242 2.873.12 3.176.77.84 1.234 1.912 1.234 3.222 
+        0 4.61-2.804 5.628-5.476 5.922.43.372.814 1.102.814 2.222 0 1.606-.014 2.898-.014 3.293 
+        0 .32.216.694.825.576C20.565 21.796 24 17.296 24 12c0-6.63-5.37-12-12-12z"/>
+    </svg>
+</a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="skills.html" class="text-gray-300 hover:text-white transition-smooth">Keahlian</a></li>
+                    <li><a href="portfolio.html" class="text-gray-300 hover:text-white transition-smooth">Portfolio</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Kontak</h4>
+                <ul class="space-y-2">
+                    <li class="text-gray-300">vuzinet@gmail.com</li>
+                    <li><a href="contact.html" class="text-gray-300 hover:text-white transition-smooth">Form Kontak</a></li>
+                    <li class="text-gray-300">WhatsApp Available</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+            <p class="text-gray-300">© 2025 Ahmad Fauzi. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<a href="https://wa.me/6281234567890?text=Halo%20Ahmad%2C%20saya%20tertarik%20dengan%20portfolio%20Anda" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-smooth z-50" aria-label="Chat WhatsApp">
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.106"/>
+    </svg>
+</a>
+
+<script>
+    // Initialize AOS
+    AOS.init({
+        duration: 600,
+        easing: 'ease-out',
+        once: true
+    });
+
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
+
+    // Portfolio filter functionality
+    const filterButtons = document.querySelectorAll('.portfolio-filter');
+    const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+    // Add styles for filter buttons
+    filterButtons.forEach(button => {
+        button.classList.add('px-4', 'py-2', 'rounded-lg', 'font-medium', 'transition-smooth', 'text-sm');
+        if (button.classList.contains('active')) {
+            button.classList.add('bg-primary', 'text-white');
+        } else {
+            button.classList.add('bg-surface', 'text-text-secondary', 'hover:bg-primary', 'hover:text-white');
+        }
+    });
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const category = button.getAttribute('data-category');
+            
+            // Update active button
+            filterButtons.forEach(btn => {
+                btn.classList.remove('active', 'bg-primary', 'text-white');
+                btn.classList.add('bg-surface', 'text-text-secondary', 'hover:bg-primary', 'hover:text-white');
+            });
+            button.classList.add('active', 'bg-primary', 'text-white');
+            button.classList.remove('bg-surface', 'text-text-secondary', 'hover:bg-primary', 'hover:text-white');
+            
+            // Filter items
+            portfolioItems.forEach(item => {
+                if (category === 'all' || item.getAttribute('data-category') === category) {
+                    item.style.display = 'block';
+                    item.classList.add('animate-reveal');
+                    setTimeout(() => {
+                        item.classList.add('revealed');
+                    }, 100);
+                } else {
+                    item.style.display = 'none';
+                    item.classList.remove('animate-reveal', 'revealed');
+                }
+            });
+        });
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
+
+    // Form submissions
+    document.querySelectorAll('form').forEach(form => {
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Simple form validation and submission simulation
+            const formData = new FormData(this);
+            const submitButton = this.querySelector('button[type="submit"]');
+            const originalText = submitButton.textContent;
+            
+            // Show loading state
+            submitButton.textContent = 'Mengirim...';
+            submitButton.disabled = true;
+            
+            // Simulate form submission
+            setTimeout(() => {
+                submitButton.textContent = 'Terkirim!';
+                submitButton.classList.remove('btn-primary', 'btn-accent');
+                submitButton.classList.add('bg-success', 'text-white');
+                
+                // Reset form
+                this.reset();
+                
+                // Reset button after 3 seconds
+                setTimeout(() => {
+                    submitButton.textContent = originalText;
+                    submitButton.disabled = false;
+                    submitButton.classList.remove('bg-success');
+                    if (originalText.includes('Subscribe')) {
+                        submitButton.classList.add('btn-primary');
+                    } else {
+                        submitButton.classList.add('btn-accent');
+                    }
+                }, 3000);
+            }, 2000);
+        });
+    });
+
+    // Add reveal animation to portfolio items on load
+    window.addEventListener('load', () => {
+        portfolioItems.forEach((item, index) => {
+            setTimeout(() => {
+                item.classList.add('animate-reveal', 'revealed');
+            }, index * 100);
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keahlian - Ahmad Fauzi Portfolio</title>
+    <meta name="description" content="Eksplorasi keahlian Ahmad Fauzi dalam penjahit, trading, dan content creation dengan progress indicator yang transparan dan roadmap pembelajaran." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fahmadfauz9126back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.8"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 bg-background/95 backdrop-blur-sm border-b border-border z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="homepage.html" class="text-xl font-bold text-gradient">Ahmad Fauzi</a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="homepage.html" class="text-text-secondary hover:text-primary transition-smooth px-3 py-2 rounded-md text-sm">Beranda</a>
+                        <a href="skills.html" class="text-primary font-medium px-3 py-2 rounded-md text-sm">Keahlian</a>
+                        <a href="portfolio.html" class="text-text-secondary hover:text-primary transition-smooth px-3 py-2 rounded-md text-sm">Portfolio</a>
+                        <a href="contact.html" class="btn-accent text-sm">Hubungi</a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-text-secondary hover:text-primary p-2">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="md:hidden hidden bg-background border-t border-border">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="homepage.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Beranda</a>
+                <a href="skills.html" class="text-primary block px-3 py-2 rounded-md text-base font-medium">Keahlian</a>
+                <a href="portfolio.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Portfolio</a>
+                <a href="contact.html" class="text-text-secondary hover:text-primary block px-3 py-2 rounded-md text-base">Hubungi</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-20 pb-12 bg-gradient-to-br from-primary-50 to-accent-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center" data-aos="fade-up">
+                <h1 class="text-4xl lg:text-5xl font-bold text-text-primary mb-6">
+                    Keahlian <span class="text-gradient">Saya</span>
+                </h1>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto mb-8">
+                    Transparansi adalah kunci. Berikut adalah tingkat keahlian saya saat ini dengan persentase yang jujur dan roadmap pembelajaran yang terstruktur.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <div class="bg-white px-6 py-3 rounded-full shadow-soft">
+                        <span class="text-sm text-text-muted">Total Skill Areas:</span>
+                        <span class="font-bold text-primary ml-2">3 Aktif</span>
+                    </div>
+                    <div class="bg-white px-6 py-3 rounded-full shadow-soft">
+                        <span class="text-sm text-text-muted">Rata-rata Progress:</span>
+                        <span class="font-bold text-success ml-2">14.3%</span>
+                    </div>
+                    <div class="bg-white px-6 py-3 rounded-full shadow-soft">
+                        <span class="text-sm text-text-muted">Status:</span>
+                        <span class="font-bold text-accent ml-2">Tahap belajar</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Skills Dashboard -->
+    <section class="py-16 bg-background">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Primary Skills -->
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold text-text-primary mb-8 text-center" data-aos="fade-up">Keahlian Utama</h2>
+                
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <!-- Tailoring Skill -->
+                    <div class="skill-card card p-8 cursor-pointer transition-all duration-300 hover:shadow-lg" data-aos="fade-up" data-aos-delay="100" data-skill="tailoring">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="flex items-center">
+                                <div class="w-16 h-16 bg-primary-100 rounded-xl flex items-center justify-center mr-4">
+                                    <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h8m-9-4h10a1 1 0 011 1v8a1 1 0 01-1 1H6a1 1 0 01-1-1v-8a1 1 0 011-1z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl font-bold text-text-primary">Penjahit</h3>
+                                    <p class="text-text-secondary">Keahlian Utama</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-3xl font-bold text-primary">27%</div>
+                                <div class="text-sm text-success">Pemula</div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-progress h-4 mb-6">
+                            <div class="skill-progress-bar" style="width: 85%" data-progress="27"></div>
+                        </div>
+                        
+                        <div class="space-y-4 mb-6">
+                            <div class="flex items-center text-sm">
+                                <div class="w-2 h-2 bg-success rounded-full mr-3"></div>
+                                <span class="text-text-secondary">Teknik Jahit Manual & Mesin</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <div class="w-2 h-2 bg-success rounded-full mr-3"></div>
+                                <span class="text-text-secondary">Latihan Pola Sederhana</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <div class="w-2 h-2 bg-warning rounded-full mr-3"></div>
+                                <span class="text-text-secondary">Perbaikan & Alterasi Ringan</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Expandable Content -->
+                        <div class="skill-details hidden">
+                            <div class="border-t border-border pt-6 mt-6">
+                                <h4 class="font-semibold text-text-primary mb-4">Detail Belajar</h4>
+                                <div class="grid grid-cols-2 gap-4 mb-6">
+                                    <div class="text-center p-4 bg-surface rounded-lg">
+                                        <div class="text-2xl font-bold text-primary">3+</div>
+                                        <div class="text-sm text-text-secondary">Bulan Pengalaman</div>
+                                    </div>
+                                    <div class="text-center p-4 bg-surface rounded-lg">
+                                        <div class="text-2xl font-bold text-success">5</div>
+                                        <div class="text-sm text-text-secondary">Proyek Selesai</div>
+                                    </div>
+                                </div>
+                                
+                                <h5 class="font-medium text-text-primary mb-3">Fokus Pembelajaran:</h5>
+                                <ul class="space-y-2 text-sm text-text-secondary mb-6">
+                                    <li>• Mengenal dasar penggunaan mesin jahit konveksi</li>
+                                    <li>• Belajar menjahit pola sederhana (kaos & celana basic)</li>
+                                    <li>• Latihan jahit lurus & finishing dasar</li>
+                                    <li>• Memahami proses produksi pakaian skala pabrik</li>
+                                </ul>
+                                
+                                <div class="bg-primary-50 p-4 rounded-lg">
+                                    <h5 class="font-medium text-primary mb-2">Sedang Dipelajari:</h5>
+                                    <p class="text-sm text-text-secondary">Mengembangkan skill ke arah jahit rumahan (custom kecil-kecilan), memahami pola dasar, dan meningkatkan kerapihan hasil jahitan.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="expand-btn w-full mt-4 text-primary hover:text-primary-700 text-sm font-medium transition-smooth">
+                            Lihat Detail <span class="ml-1">↓</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Trading Skill -->
+                    <div class="skill-card card p-8 cursor-pointer transition-all duration-300 hover:shadow-lg" data-aos="fade-up" data-aos-delay="200" data-skill="trading">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="flex items-center">
+                                <div class="w-16 h-16 bg-success-100 rounded-xl flex items-center justify-center mr-4">
+                                    <svg class="w-8 h-8 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <!-- Candlestick kiri -->
+  <line x1="6" y1="4" x2="6" y2="20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <rect x="4" y="8" width="4" height="8" fill="currentColor"/>
+  
+  <!-- Candlestick tengah -->
+  <line x1="12" y1="2" x2="12" y2="22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <rect x="10" y="6" width="4" height="12" fill="currentColor"/>
+  
+  <!-- Candlestick kanan -->
+  <line x1="18" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <rect x="16" y="10" width="4" height="4" fill="currentColor"/>
+</svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl font-bold text-text-primary">Trading</h3>
+                                    <p class="text-text-secondary">Skill digital</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-3xl font-bold text-success">10%</div>
+                                <div class="text-sm text-warning">Pemula</div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-progress h-4 mb-6">
+                            <div class="skill-progress-bar bg-gradient-to-r from-success to-warning" style="width: 60%" data-progress="10"></div>
+                        </div>
+                        
+                        <div class="space-y-4 mb-6">
+                            <div class="flex items-center text-sm">
+                                <div class="w-2 h-2 bg-success rounded-full mr-3"></div>
+                                <span class="text-text-secondary">Analisis Teknikal Dasar</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <div class="w-2 h-2 bg-warning rounded-full mr-3"></div>
+                                <span class="text-text-secondary">Manajemen Risiko Sederhana</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <div class="w-2 h-2 bg-error rounded-full mr-3"></div>
+                                <span class="text-text-secondary">Psikologi Trading</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Expandable Content -->
+                        <div class="skill-details hidden">
+                            <div class="border-t border-border pt-6 mt-6">
+                                <h4 class="font-semibold text-text-primary mb-4">Detail Belajar</h4>
+                                <div class="grid grid-cols-2 gap-4 mb-6">
+                                    <div class="text-center p-4 bg-surface rounded-lg">
+                                        <div class="text-2xl font-bold text-success">1.5</div>
+                                        <div class="text-sm text-text-secondary">Tahun Belajar</div>
+                                    </div>
+                                    <div class="text-center p-4 bg-surface rounded-lg">
+                                        <div class="text-2xl font-bold text-warning">Real</div>
+                                        <div class="text-sm text-text-secondary">Mode Trading</div>
+                                    </div>
+                                </div>
+                                
+                                <h5 class="font-medium text-text-primary mb-3">Fokus Pembelajaran:</h5>
+                                <ul class="space-y-2 text-sm text-text-secondary mb-6">
+                                    <li>• Memahami news pasar global</li>
+                                    <li>• Support & resistance levels</li>
+                                    <li>• Market sentiment analysis</li>
+                                    <li>• Mengenal pentingnya kontrol emosi & disiplin</li>
+                                </ul>
+                                
+                                <div class="bg-warning-50 p-4 rounded-lg">
+                                    <h5 class="font-medium text-warning-600 mb-2">Disiplin belajar:</h5>
+                                    <p class="text-sm text-text-secondary">Tetap melanjutkan belajar, mencoba dengan modal kecil, memperbaiki mindset, dan fokus pada konsistensi meski profit kecil.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="expand-btn w-full mt-4 text-success hover:text-success-600 text-sm font-medium transition-smooth">
+                            Lihat Detail <span class="ml-1">↓</span>
+                        </button>
+                    </div>
+                    
+                    <!-- Coding Skill -->
+                    <div class="skill-card card p-8 cursor-pointer transition-all duration-300 hover:shadow-lg" data-aos="fade-up" data-aos-delay="300" data-skill="content">
+                        <div class="flex items-center justify-between mb-6">
+                            <div class="flex items-center">
+                                <div class="w-16 h-16 bg-accent-100 rounded-xl flex items-center justify-center mr-4">
+                                    <svg class="w-8 h-8 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <rect x="3" y="4" width="18" height="12" rx="2" ry="2" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M2 20h20" stroke-width="2" stroke-linecap="round"/>
+</svg>
+                                </div>
+                                <div>
+                                    <h3 class="text-2xl font-bold text-text-primary">Coding</h3>
+                                    <p class="text-text-secondary">Bahasa pemrograman</p>
+                                </div>
+                            </div>
+                            <div class="text-right">
+                                <div class="text-3xl font-bold text-accent">6%</div>
+                                <div class="text-sm text-success">Belajar</div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-progress h-4 mb-6">
+                            <div class="skill-progress-bar bg-gradient-to-r from-accent to-primary" style="width: 70%" data-progress="6"></div>
+                        </div>
+                        
+                        <div class="space-y-4 mb-6">
+                            <div class="flex items-center text-sm">
+                                <div class="w-2 h-2 bg-success rounded-full mr-3"></div>
+                                <span class="text-text-secondary">Fundamental Programming</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <div class="w-2 h-2 bg-success rounded-full mr-3"></div>
+                                <span class="text-text-secondary">Web Development Basics</span>
+                            </div>
+                            <div class="flex items-center text-sm">
+                                <div class="w-2 h-2 bg-warning rounded-full mr-3"></div>
+                                <span class="text-text-secondary">Problem Solving Skills</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Expandable Content -->
+                        <div class="skill-details hidden">
+                            <div class="border-t border-border pt-6 mt-6">
+                                <h4 class="font-semibold text-text-primary mb-4">Detail Belajar</h4>
+                                <div class="grid grid-cols-2 gap-4 mb-6">
+                                    <div class="text-center p-4 bg-surface rounded-lg">
+                                        <div class="text-2xl font-bold text-accent">1+</div>
+                                        <div class="text-sm text-text-secondary">Tahun Aktif</div>
+                                    </div>
+                                    <div class="text-center p-4 bg-surface rounded-lg">
+                                        <div class="text-2xl font-bold text-success">2+</div>
+                                        <div class="text-sm text-text-secondary">Platform Aktif</div>
+                                    </div>
+                                </div>
+                                
+                                <h5 class="font-medium text-text-primary mb-3">Platform & Aktivitas:</h5>
+                                <ul class="space-y-2 text-sm text-text-secondary mb-6">
+                                    <li>• FreeCodeCamp: Latihan dasar pemrograman</li>
+                                    <li>• GitHub: Upload & dokumentasi project sederhana</li>
+                                    <li>• YouTube: Belajar konsep & tutorial coding</li>
+                                    <li>• Forum/Discord: Diskusi & tanya jawab</li>
+                                </ul>
+                                
+                                <div class="bg-accent-50 p-4 rounded-lg">
+                                    <h5 class="font-medium text-accent-600 mb-2">Fokus belajar:</h5>
+                                    <p class="text-sm text-text-secondary">Membangun dasar coding, memahami logika pemrograman, dan membuat project sederhana (website, portofolio).</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="expand-btn w-full mt-4 text-accent hover:text-accent-600 text-sm font-medium transition-smooth">
+                            Lihat Detail <span class="ml-1">↓</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skill Synergy Visualization -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-text-primary mb-4">Sinergi Keahlian</h2>
+                <p class="text-text-secondary max-w-3xl mx-auto">Bagaimana keahlian yang berbeda saling melengkapi dan memperkuat satu sama lain dalam pendekatan holistik saya.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- Synergy 1 -->
+                <div class="card p-6 text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary to-success rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-3">Presisi & Analisis</h3>
+                    <p class="text-text-secondary text-sm">Ketelitian dalam jahit diterapkan pada analisis chart trading untuk identifikasi pattern yang akurat.</p>
+                </div>
+                
+                <!-- Synergy 2 -->
+                <div class="card p-6 text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-gradient-to-br from-success to-accent rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-2-2V10a2 2 0 012-2h8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-3">Storytelling & Komunikasi</h3>
+                    <p class="text-text-secondary text-sm">Kemampuan bercerita dari content creation meningkatkan komunikasi dengan klien jahit dan audience trading.</p>
+                </div>
+                
+                <!-- Synergy 3 -->
+                <div class="card p-6 text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-gradient-to-br from-accent to-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-text-primary mb-3">Kreativitas & Inovasi</h3>
+                    <p class="text-text-secondary text-sm">Pendekatan kreatif dalam desain pakaian dan konten membantu menemukan strategi trading yang unik.</p>
+                </div>
+            </div>
+            
+            <!-- Interactive Synergy Map -->
+            <div class="card p-8" data-aos="fade-up">
+                <h3 class="text-2xl font-semibold text-text-primary mb-6 text-center">Peta Interaksi Keahlian</h3>
+                <div class="relative">
+                    <!-- Central Hub -->
+                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-24 h-24 bg-gradient-to-br from-primary to-accent rounded-full flex items-center justify-center z-10">
+                        <div class="text-white text-center">
+                            <div class="text-xs font-medium">Multi</div>
+                            <div class="text-xs font-medium">Skill</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Skill Nodes -->
+                    <div class="grid grid-cols-3 gap-8 items-center min-h-64">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-2">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h8m-9-4h10a1 1 0 011 1v8a1 1 0 01-1 1H6a1 1 0 01-1-1v-8a1 1 0 011-1z"/>
+                                </svg>
+                            </div>
+                            <div class="text-sm font-medium text-text-primary">Belajar</div>
+                            <div class="text-xs text-text-secondary">Presisi & Detail</div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-success rounded-full flex items-center justify-center mx-auto mb-2">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"/>
+                                </svg>
+                            </div>
+                            <div class="text-sm font-medium text-text-primary">Trading</div>
+                            <div class="text-xs text-text-secondary">Analisis & Strategi</div>
+                        </div>
+                        
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-2">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+  <!-- Candlestick kiri -->
+  <line x1="6" y1="4" x2="6" y2="20" stroke-width="2" stroke-linecap="round"/>
+  <rect x="4" y="8" width="4" height="8" fill="currentColor"/>
+  
+  <!-- Candlestick tengah -->
+  <line x1="12" y1="2" x2="12" y2="22" stroke-width="2" stroke-linecap="round"/>
+  <rect x="10" y="6" width="4" height="12" fill="currentColor"/>
+  
+  <!-- Candlestick kanan -->
+  <line x1="18" y1="6" x2="18" y2="18" stroke-width="2" stroke-linecap="round"/>
+  <rect x="16" y="10" width="4" height="4" fill="currentColor"/>
+</svg>
+                            </div>
+                            <div class="text-sm font-medium text-text-primary">Content</div>
+                            <div class="text-xs text-text-secondary">Analisis Candlestick</div>
+                        </div>
+                    </div>
+                    
+                    <!-- Connection Lines (CSS-based) -->
+                    <div class="absolute inset-0 pointer-events-none">
+                        <svg class="w-full h-full" viewBox="0 0 400 200">
+                            <defs>
+                                <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" style="stop-color:#2563EB;stop-opacity:0.3"/>
+                                    <stop offset="100%" style="stop-color:#10B981;stop-opacity:0.3"/>
+                                </linearGradient>
+                                <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" style="stop-color:#10B981;stop-opacity:0.3"/>
+                                    <stop offset="100%" style="stop-color:#F97316;stop-opacity:0.3"/>
+                                </linearGradient>
+                                <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="0%">
+                                    <stop offset="0%" style="stop-color:#F97316;stop-opacity:0.3"/>
+                                    <stop offset="100%" style="stop-color:#2563EB;stop-opacity:0.3"/>
+                                </linearGradient>
+                            </defs>
+                            <path d="M100 100 Q200 50 300 100" stroke="url(#gradient1)" stroke-width="2" fill="none" opacity="0.6"/>
+                            <path d="M300 100 Q350 150 200 150" stroke="url(#gradient2)" stroke-width="2" fill="none" opacity="0.6"/>
+                            <path d="M200 150 Q50 150 100 100" stroke="url(#gradient3)" stroke-width="2" fill="none" opacity="0.6"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Roadmap -->
+    <section class="py-16 bg-background">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-text-primary mb-4">Roadmap Pembelajaran 2026</h2>
+                <p class="text-text-secondary max-w-3xl mx-auto">Rencana pengembangan keahlian dengan target yang realistis dan metode pembelajaran yang terstruktur.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Q1 2025 -->
+                <div class="card p-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-3">
+                            <span class="text-white text-sm font-bold">Q1</span>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-text-primary">Jan - Mar 2026</h3>
+                            <p class="text-xs text-text-secondary">Fokus Trading</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-2 text-sm text-text-secondary">
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 bg-warning rounded-full mr-2"></div>
+                            Live Trading Real account
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 bg-warning rounded-full mr-2"></div>
+                            Advanced Chart Analysis
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 bg-warning rounded-full mr-2"></div>
+                            Risk Management System
+                        </li>
+                    </ul>
+                    <div class="mt-4 text-xs text-text-muted">Target: 20% skill level</div>
+                </div>
+                
+                <!-- Q2 2025 -->
+                <div class="card p-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 bg-success rounded-full flex items-center justify-center mr-3">
+                            <span class="text-white text-sm font-bold">Q2</span>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-text-primary">Apr - Jun 2026</h3>
+                            <p class="text-xs text-text-secondary">Digital Marketing</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-2 text-sm text-text-secondary">
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 bg-warning rounded-full mr-2"></div>
+                            SEO & Content Strategy
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 bg-warning rounded-full mr-2"></div>
+                            Social Media Ads
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 bg-warning rounded-full mr-2"></div>
+                           Youtube automation
+                        </li>
+                    </ul>
+                    <div class="mt-4 text-xs text-text-muted">Target: 40% skill level</div>
+                </div>
+                
+                <!-- Q3 2025 -->
+                <div class="card p-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center mr-3">
+                            <span class="text-white text-sm font-bold">Q3</span>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-text-primary">Jul - Sep 2026</h3>
+                            <p class="text-xs text-text-secondary">Bussinies</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-2 text-sm text-text-secondary">
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 bg-warning rounded-full mr-2"></div>
+                            Produk digital
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 bg-warning rounded-full mr-2"></div>
+                            Product Photography
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 bg-warning rounded-full mr-2"></div>
+                            Customer Service
+                        </li>
+                    </ul>
+                    <div class="mt-4 text-xs text-text-muted">Target: 35% skill level</div>
+                </div>
+                
+                <!-- Q4 2025 -->
+                <div class="card p-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="flex items-center mb-4">
+                        <div class="w-8 h-8 bg-secondary rounded-full flex items-center justify-center mr-3">
+                            <span class="text-white text-sm font-bold">Q4</span>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-text-primary">Oct - Dec 2026</h3>
+                            <p class="text-xs text-text-secondary">Advanced Video</p>
+                        </div>
+                    </div>
+                    <ul class="space-y-2 text-sm text-text-secondary">
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 bg-warning rounded-full mr-2"></div>
+                            Professional Video Editing
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 bg-warning rounded-full mr-2"></div>
+                            Motion Graphics
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 bg-warning rounded-full mr-2"></div>
+                            YouTube Optimization
+                        </li>
+                    </ul>
+                    <div class="mt-4 text-xs text-text-muted">Target: 45% skill level</div>
+                </div>
+            </div>
+            
+            <!-- Learning Methods -->
+            <div class="mt-12 card p-8" data-aos="fade-up">
+                <h3 class="text-2xl font-semibold text-text-primary mb-6 text-center">Metode Pembelajaran</h3>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                            </svg>
+                        </div>
+                        <h4 class="font-semibold text-text-primary mb-2">Online Course</h4>
+                        <p class="text-sm text-text-secondary">Platform pembelajaran terstruktur dengan sertifikasi</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-success" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                            </svg>
+                        </div>
+                        <h4 class="font-semibold text-text-primary mb-2">Mentorship</h4>
+                        <p class="text-sm text-text-secondary">Bimbingan langsung dari praktisi berpengalaman</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                            </svg>
+                        </div>
+                        <h4 class="font-semibold text-text-primary mb-2">Practice Project</h4>
+                        <p class="text-sm text-text-secondary">Implementasi langsung melalui proyek nyata</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-16 bg-gradient-to-br from-primary-50 to-accent-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center" data-aos="fade-up">
+            <h2 class="text-3xl font-bold text-text-primary mb-4">Tertarik Berkolaborasi?</h2>
+            <p class="text-xl text-text-secondary mb-8 max-w-2xl mx-auto">
+                Dengan kombinasi keahlian yang unik, saya siap membantu proyek Anda atau belajar bersama dalam perjalanan multi-skill ini.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="portfolio.html" class="btn-primary">Lihat Portfolio</a>
+                <a href="contact.html" class="btn-secondary">Diskusi Proyek</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="md:col-span-2">
+                    <h3 class="text-2xl font-bold mb-4">Ahmad Fauzi</h3>
+                    <p class="text-gray-300 mb-4 max-w-md">
+                        Multi-skilled professional yang menggabungkan keahlian tradisional dengan skill digital modern. Selalu belajar, selalu berkembang.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://tiktok.com/@vuzinet" target="_blank" class="text-gray-300 hover:text-white transition-smooth">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-.88-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
+                            </svg>
+                        </a>
+                        <a href="https://instagram.com/vuzinett" target="_blank" class="text-gray-300 hover:text-white transition-smooth">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        <a href="https://facebook.com/vuzinett" target="_blank" class="text-gray-300 hover:text-white transition-smooth">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="https://github.com/vuzinet" target="_blank" class="text-gray-300 hover:text-white transition-smooth">
+    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.387.6.113.82-.26.82-.577 
+        0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.09-.745.083-.73.083-.73 
+        1.205.085 1.838 1.236 1.838 1.236 1.07 1.834 2.807 1.304 3.492.997.108-.775.418-1.305.762-1.605-2.665-.3-5.466-1.334-5.466-5.932 
+        0-1.31.468-2.382 1.235-3.222-.123-.303-.535-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 013.003-.404c1.02.005 2.045.137 3.003.404 
+        2.29-1.552 3.296-1.23 3.296-1.23.653 1.653.242 2.873.12 3.176.77.84 1.234 1.912 1.234 3.222 
+        0 4.61-2.804 5.628-5.476 5.922.43.372.814 1.102.814 2.222 0 1.606-.014 2.898-.014 3.293 
+        0 .32.216.694.825.576C20.565 21.796 24 17.296 24 12c0-6.63-5.37-12-12-12z"/>
+    </svg>
+</a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="skills.html" class="text-gray-300 hover:text-white transition-smooth">Keahlian</a></li>
+                        <li><a href="portfolio.html" class="text-gray-300 hover:text-white transition-smooth">Portfolio</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Kontak</h4>
+                    <ul class="space-y-2">
+                        <li class="text-gray-300">vuzinet@gmail.com</li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white transition-smooth">Form Kontak</a></li>
+                        <li class="text-gray-300">WhatsApp Available</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-300">© 2025 Ahmad Fauzi. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6281234567890?text=Halo%20Ahmad%2C%20saya%20tertarik%20dengan%20keahlian%20Anda" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-smooth z-50" aria-label="Chat WhatsApp">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.106"/>
+        </svg>
+    </a>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 600,
+            easing: 'ease-out',
+            once: true
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Skill card expansion functionality
+        document.querySelectorAll('.skill-card').forEach(card => {
+            const expandBtn = card.querySelector('.expand-btn');
+            const skillDetails = card.querySelector('.skill-details');
+            
+            expandBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                
+                // Toggle current card
+                const isExpanded = !skillDetails.classList.contains('hidden');
+                
+                // Close all other cards
+                document.querySelectorAll('.skill-details').forEach(detail => {
+                    detail.classList.add('hidden');
+                });
+                document.querySelectorAll('.expand-btn span').forEach(arrow => {
+                    arrow.textContent = '↓';
+                });
+                document.querySelectorAll('.expand-btn').forEach(btn => {
+                    btn.innerHTML = btn.innerHTML.replace('Tutup Detail', 'Lihat Detail');
+                });
+                
+                // Toggle current card if it wasn't expanded
+                if (!isExpanded) {
+                    skillDetails.classList.remove('hidden');
+                    expandBtn.querySelector('span').textContent = '↑';
+                    expandBtn.innerHTML = expandBtn.innerHTML.replace('Lihat Detail', 'Tutup Detail');
+                }
+            });
+        });
+
+        // Animate skill progress bars on scroll
+        const observerOptions = {
+            threshold: 0.3,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const progressBars = entry.target.querySelectorAll('.skill-progress-bar');
+                    progressBars.forEach(bar => {
+                        const progress = bar.getAttribute('data-progress');
+                        bar.style.width = '0%';
+                        setTimeout(() => {
+                            bar.style.width = progress + '%';
+                        }, 200);
+                    });
+                }
+            });
+        }, observerOptions);
+
+        // Observe skill cards
+        document.querySelectorAll('.skill-card').forEach(card => {
+            observer.observe(card);
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Interactive synergy map hover effects
+        const synergyNodes = document.querySelectorAll('.synergy-node');
+        synergyNodes.forEach(node => {
+            node.addEventListener('mouseenter', () => {
+                node.style.transform = 'scale(1.1)';
+            });
+            
+            node.addEventListener('mouseleave', () => {
+                node.style.transform = 'scale(1)';
+            });
+        });
+
+        // Add loading animation for roadmap cards
+        const roadmapCards = document.querySelectorAll('[data-aos-delay]');
+        roadmapCards.forEach((card, index) => {
+            card.style.animationDelay = `${index * 0.1}s`;
+        });
+    </script>
+</body>
+</html>

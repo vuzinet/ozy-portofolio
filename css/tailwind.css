@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary Colors */
+  --color-primary: #2563EB; /* blue-600 */
+  --color-primary-50: #EFF6FF; /* blue-50 */
+  --color-primary-100: #DBEAFE; /* blue-100 */
+  --color-primary-200: #BFDBFE; /* blue-200 */
+  --color-primary-500: #3B82F6; /* blue-500 */
+  --color-primary-700: #1D4ED8; /* blue-700 */
+  
+  /* Secondary Colors */
+  --color-secondary: #1E40AF; /* blue-800 */
+  --color-secondary-50: #EFF6FF; /* blue-50 */
+  --color-secondary-100: #DBEAFE; /* blue-100 */
+  --color-secondary-200: #BFDBFE; /* blue-200 */
+  --color-secondary-600: #2563EB; /* blue-600 */
+  --color-secondary-700: #1D4ED8; /* blue-700 */
+  
+  /* Accent Colors */
+  --color-accent: #F97316; /* orange-500 */
+  --color-accent-50: #FFF7ED; /* orange-50 */
+  --color-accent-100: #FFEDD5; /* orange-100 */
+  --color-accent-200: #FED7AA; /* orange-200 */
+  --color-accent-400: #FB923C; /* orange-400 */
+  --color-accent-600: #EA580C; /* orange-600 */
+  --color-accent-700: #C2410C; /* orange-700 */
+  
+  /* Background Colors */
+  --color-background: #FFFFFF; /* white */
+  --color-surface: #F8FAFC; /* slate-50 */
+  --color-surface-100: #F1F5F9; /* slate-100 */
+  --color-surface-200: #E2E8F0; /* slate-200 */
+  
+  /* Text Colors */
+  --color-text-primary: #1F2937; /* gray-800 */
+  --color-text-secondary: #6B7280; /* gray-500 */
+  --color-text-muted: #9CA3AF; /* gray-400 */
+  
+  /* Status Colors */
+  --color-success: #10B981; /* emerald-500 */
+  --color-success-50: #ECFDF5; /* emerald-50 */
+  --color-success-100: #D1FAE5; /* emerald-100 */
+  --color-success-600: #059669; /* emerald-600 */
+  
+  --color-warning: #F59E0B; /* amber-500 */
+  --color-warning-50: #FFFBEB; /* amber-50 */
+  --color-warning-100: #FEF3C7; /* amber-100 */
+  --color-warning-600: #D97706; /* amber-600 */
+  
+  --color-error: #EF4444; /* red-500 */
+  --color-error-50: #FEF2F2; /* red-50 */
+  --color-error-100: #FEE2E2; /* red-100 */
+  --color-error-600: #DC2626; /* red-600 */
+  
+  /* Border Colors */
+  --color-border: #E5E7EB; /* gray-200 */
+  --color-border-light: #F3F4F6; /* gray-100 */
+  --color-border-focus: #BFDBFE; /* blue-200 */
+}
+
+@layer base {
+  body {
+    font-family: 'Inter', sans-serif;
+    color: var(--color-text-primary);
+    background-color: var(--color-background);
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: var(--color-text-primary);
+  }
+  
+  .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 ease-out hover:bg-primary-700 hover:shadow-md;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 ease-out hover:bg-secondary-700 hover:shadow-md;
+  }
+  
+  .btn-accent {
+    @apply bg-accent text-white px-6 py-3 rounded-lg font-semibold transition-all duration-300 ease-out hover:bg-accent-600 hover:shadow-md;
+  }
+  
+  .card {
+    @apply bg-surface rounded-lg shadow-sm border border-border-light transition-all duration-300 ease-out hover:shadow-md;
+  }
+  
+  .skill-progress {
+    @apply bg-surface-200 rounded-full overflow-hidden;
+  }
+  
+  .skill-progress-bar {
+    @apply bg-gradient-to-r from-primary to-accent h-full transition-all duration-400 ease-out;
+  }
+  
+  .form-input {
+    @apply w-full px-4 py-3 border border-border rounded-lg focus:border-border-focus focus:ring-2 focus:ring-primary-100 transition-all duration-300 ease-out;
+  }
+  
+  .animate-reveal {
+    @apply opacity-0 translate-y-4 transition-all duration-400 ease-out;
+  }
+  
+  .animate-reveal.revealed {
+    @apply opacity-100 translate-y-0;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, var(--color-primary), var(--color-accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .shadow-soft {
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  }
+  
+  .transition-smooth {
+    transition: all 300ms ease-out;
+  }
+  
+  .transition-reveal {
+    transition: all 400ms ease-out;
+  }
+}
